@@ -1,0 +1,170 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Navbar items on the left */
+.navbar-nav {
+    margin-left: 45%; /* Adjust this to space out navbar items */
+}
+
+/* Form and navbar search input styling */
+.d-flex {
+    margin-left: 10%;
+}
+
+/* Blog section */
+.bloghead {
+    margin-top: 200px;
+    margin-left: 10px;
+    position: relative;
+}
+
+/* Side Navbar Styling */
+.side-navbar {
+    position: fixed;
+    top: 300px;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #faf7f7;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+}
+
+.side-navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-navbar ul li {
+    margin: 20px 0;
+}
+
+.side-navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.side-navbar ul li a:hover {
+    background-color: #575757;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 250px; /* This pushes the main content to the right to make space for the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust width to take up remaining space */
+}
+
+/* Form and input styling */
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Sign-up button styling */
+.btn-signup {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-signup:hover {
+    background-color: #45a049;
+}
+
+/* Login button styling */
+.btn-login {
+    background-color: #008CBA;
+    color: white;
+}
+
+.btn-login a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    background-color: #007bb5;
+}
+
+.btn-login a:hover {
+    text-decoration: underline;
+}
+
+/* Adjusting layout for centered list in sidebar */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Styling for left list in sidebar */
+.left-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-list li {
+    padding: 8px;
+    font-size: 18px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.users-list{
+    left: 200px;
+    top: 300px;
+}

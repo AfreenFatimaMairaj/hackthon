@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stles.css">
+    <style>
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the form */
+.div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    justify-items: center;
+    box-shadow: 0 4px 10px rgba(138, 119, 119, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Styling for input fields */
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Styling for buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styling for the sign up button */
+.btn-signup {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-signup:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the login button */
+.btn-login {
+    background-color: #008CBA;
+    color: white;
+}
+
+.btn-login a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for login button */
+.btn-login:hover {
+    background-color: #007bb5;
+}
+
+/* Additional styling for login button hover */
+.btn-login a:hover {
+    text-decoration: underline;
+}
+
+.side-navbar {
+    position: fixed;
+
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #faf7f7;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-navbar ul li {
+    margin: 20px 0;
+}
+
+.side-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+.side-navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 250px; /* This pushes the main content to the right to make space for the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body class="body">
+    <div class="div">
+        <h2>Create a New Account</h2>
+
+        <!-- Sign Up Form -->
+        <form id="signupForm">
+            <div class="mb-3">
+                <input name="email" type="email" placeholder="Email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <input name="name" type="text" placeholder="Name" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <input name="password" type="password" placeholder="Password" id="password" class="form-control" required>
+            </div>
+
+            <button id="signupButton" class="btn btn-signup" type="submit">Sign Up</button>
+            <button id="loginButton" class="btn btn-login">
+                <a href="./login.html" class="text-white text-decoration-none">Login</a>
+            </button>
+        </form>
+    </div>
+
+    <script type="module" src="./signin.js"></script>
+</body>
+</html>
